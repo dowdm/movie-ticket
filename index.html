@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bob's Theater</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Buy Tickets:</h2>
+          <form id="form">
+            <div class="form-group">
+              <label for="age">Age</label>
+              <select class="form-control" id="age">
+               <option value="1">Youth (12 and under)</option>
+               <option value="2">Teen (13 - 17)</option>
+               <option value="3">Adult</option>
+               <option value="4">Senior (65+)</option>
+             </select>
+            <div class="form-group">
+              <label for="movie-titles">Movie</label>
+              <select class="form-control" id="movie-titles">
+               <option value="1">Animated</option>
+               <option value="2">Rom-Com</option>
+               <option value="3">CGI Action</option>
+               <option value="4">Crappy Horror</option>
+             </select>
+            </div>
+            <div class="form-group">
+              <label for="movie-times">Times</label>
+              <select class="form-control" id="movie-times">
+               <option value="1">2:00</option>
+               <option value="2">4:00</option>
+               <option value="3">7:00</option>
+               <option value="4">9:00</option>
+             </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" name="quantity" required>
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+        <div id="show-contact">
+          <h2></h2>
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
