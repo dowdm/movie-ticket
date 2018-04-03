@@ -43,7 +43,9 @@ $(function() {
     var userDiscount = discount(inputAge, inputTime);
     var userPrice = 10;
     var newOrder = new Order(inputTitle, inputTime, userPrice, inputQuantity, userDiscount);
-
+    $("#total p").text("$" + newOrder.calculate());
+    $("#total").show();
+    // var total = function()+=new
     console.log(newOrder.calculate());
     console.log(userDiscount);
 
